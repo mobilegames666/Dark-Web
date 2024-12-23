@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker's Emporium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hacker's Emporium</h1>
+    <nav>
+      <ul>
+        <li><a href="#malware-generator">Malware Generator</a></li>
+        <li><a href="#password-cracker">Password Cracker</a></li>
+        <li><a href="#vuln-scanner">Vulnerability Scanner</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="malware-generator">
+      <h2>Malware Generator</h2>
+      <form id="malware-form">
+        <label for="malware-type">Malware Type:</label>
+        <select id="malware-type">
+          <option value="trojan">Trojan</option>
+          <option value="worm">Worm</option>
+          <option value="virus">Virus</option>
+        </select>
+        <br>
+        <label for="payload">Payload:</label>
+        <textarea id="payload" rows="10" cols="50"></textarea>
+        <br>
+        <button type="submit">Generate Malware</button>
+      </form>
+      <div id="malware-output"></div>
+    </section>
+    <section id="password-cracker">
+      <h2>Password Cracker</h2>
+      <form id="crack-form">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br>
+        <button type="submit">Crack Password</button>
+      </form>
+      <div id="crack-output"></div>
+    </section>
+    <section id="vuln-scanner">
+      <h2>Vulnerability Scanner</h2>
+      <form id="scan-form">
+        <label for="target-url">Target URL:</label>
+        <input type="text" id="target-url">
+        <br>
+        <button type="submit">Scan for Vulnerabilities</button>
+      </form>
+      <div id="scan-output"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
